@@ -1,4 +1,5 @@
 @use './settings/' as *;
+@use 'sass:math';
 
 * {
     box-sizing: border-box;
@@ -6,23 +7,52 @@
     padding: 0;
 }
 
+body {
+    font-family: Quicksand, sans-serif;
+}
+
 .App {
-    border: 1px solid red;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     header {
-        border: 1px solid violet;
         display: grid;
         grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-transform: capitalize;
         & > .container {
-            border: 1px solid aqua;
+            background: $primary;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            color: $secondary;
             display: flex;
-            padding: $padding;
+            &:nth-child(2) {
+                border-bottom-left-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+                grid-column: 2 / 2;
+                grid-row: 1 / -1;
+            }
         }
         #title {
             align-items: center;
+            background: $white;
+            border: $border-width solid $primary;
+            border-radius: $border-radius;
+            color: $primary;
             flex-direction: column;
+            grid-row: 1 / -1;
+            justify-content: center;
+            padding: $padding $padding * 2;
+            text-align: center;
+            h1 {
+                border-bottom: $border-width solid $pink-bright;
+                margin-bottom: math.div($margin, 2);
+                padding-bottom: math.div($padding, 2);
+            }
+            small {
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
         }
         
     }

@@ -1,28 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: Quicksand, sans-serif;
+}
+
 .App {
-  border: 1px solid red;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
 .App header {
-  border: 1px solid violet;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-transform: capitalize;
 }
 .App header > .container {
-  border: 1px solid aqua;
+  background: #1f1f1f;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  color: #f1f1f1;
   display: flex;
-  padding: 1rem;
+}
+.App header > .container:nth-child(2) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  grid-column: 2/2;
+  grid-row: 1/-1;
 }
 .App header #title {
   align-items: center;
+  background: #fff;
+  border: 5px solid #1f1f1f;
+  border-radius: 10px;
+  color: #1f1f1f;
   flex-direction: column;
+  grid-row: 1/-1;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.App header #title h1 {
+  border-bottom: 5px solid #ff5784;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.App header #title small {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .App footer {
   align-items: center;
