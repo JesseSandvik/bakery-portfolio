@@ -10,5 +10,25 @@
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
+.App header {
+  border: 1px solid violet;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+.App header > .container {
+  border: 1px solid aqua;
+  display: flex;
+  padding: 1rem;
+}
+.App header #title {
+  align-items: center;
+  flex-direction: column;
+}
+.App footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
 
 /*# sourceMappingURL=styles.css.map */

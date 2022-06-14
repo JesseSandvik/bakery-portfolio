@@ -11,10 +11,12 @@ const App = () => {
   return (
     <div className='App'>
       <Header>
-        <span>
+        <span className='container'></span>
+        <span id='title' className='container'>
           <Heading level='1'>stacy's cakes</Heading>
           <Small>new york</Small>
         </span>
+        <span className='container'></span>
       </Header>
       <Routes>
         {routes.map((route, index) => (
