@@ -1,14 +1,27 @@
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
-import React from "react";
+function NavigationLink({ children, id, to }) {
+  return (
+    <NavLink
+      className={({ isActive }) => (isActive ? "active" : null)}
+      id={id}
+      to={to}
+    >
+      {children}
+    </NavLink>
+  );
+}
 
-const NavigationLink = ({ children, to }) => (
-  <NavLink
-    className={(navData) => (navData.isActive ? "active" : null)}
-    to={to}
-  >
-    {children}
-  </NavLink>
-);
+NavigationLink.propTypes = {
+  children: PropTypes.node.isRequired,
+  id: PropTypes.string,
+  to: PropTypes.string,
+};
+
+NavigationLink.defaultProps = {
+  id: undefined,
+  to: "/",
+};
 
 export default NavigationLink;

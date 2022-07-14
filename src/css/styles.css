@@ -8,6 +8,7 @@
 
 body {
   font-family: Quicksand, sans-serif;
+  overflow-x: hidden;
 }
 body ul {
   list-style: none;
@@ -34,7 +35,7 @@ body a {
 }
 .App header > .container {
   background: #1f1f1f;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
   color: #f1f1f1;
   display: flex;
 }
@@ -52,7 +53,7 @@ body a {
   padding-bottom: 0.25rem;
 }
 .App header > .container nav ul a.active {
-  border-bottom: 5px solid #ff5784;
+  border-bottom: 3.7593984962px solid #ff5784;
 }
 .App header > .container:nth-child(2) {
   border-bottom-left-radius: 10px;
@@ -70,7 +71,7 @@ body a {
   flex-direction: column;
   grid-row: 1/-1;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
   text-align: center;
 }
 .App header #title h1 {

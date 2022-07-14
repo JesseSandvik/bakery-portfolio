@@ -1,5 +1,5 @@
-const Gallery = () => {
-  return <main></main>;
-};
+function Gallery() {
+  return <main />;
+}
 
 export default Gallery;

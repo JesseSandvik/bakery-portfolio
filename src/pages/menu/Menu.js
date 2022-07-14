@@ -1,5 +1,5 @@
-const Menu = () => {
-  return <main></main>;
-};
+function Menu() {
+  return <main />;
+}
 
 export default Menu;

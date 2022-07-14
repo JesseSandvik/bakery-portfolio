@@ -1,5 +1,5 @@
-const About = () => {
-  return <main></main>;
-};
+function About() {
+  return <main />;
+}
 
 export default About;

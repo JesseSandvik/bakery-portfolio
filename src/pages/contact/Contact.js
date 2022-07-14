@@ -1,5 +1,5 @@
-const Contact = () => {
-  return <main></main>;
-};
+function Contact() {
+  return <main />;
+}
 
 export default Contact;

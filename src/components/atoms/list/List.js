@@ -1,8 +1,23 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const List = ({ children, ordered, ...props }) => {
+function List({ children, className, id, ordered }) {
   const listType = ordered ? "ol" : "ul";
-  return React.createElement(listType, props, children);
+  return React.createElement(listType, { className, id }, children);
+}
+
+List.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  ordered: PropTypes.bool,
+};
+
+List.defaultProps = {
+  children: undefined,
+  className: undefined,
+  id: undefined,
+  ordered: false,
 };
 
 export default List;

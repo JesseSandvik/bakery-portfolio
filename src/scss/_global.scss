@@ -9,6 +9,7 @@
 
 body {
     font-family: Quicksand, sans-serif;
+    overflow-x: hidden;
     ul {
         list-style: none;
     }
@@ -33,7 +34,7 @@ body {
         top: 0;
         & > .container {
             background: $primary;
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
             color: $secondary;
             display: flex;
             nav {
@@ -47,7 +48,7 @@ body {
                         font-weight: bold;
                         padding-bottom: math.div($padding, 4);
                         &.active {
-                            border-bottom: $border-width solid $pink-bright;
+                            border-bottom: math.div($border-width, 1.33) solid $pink-bright;
                         }
                     }
                 }
@@ -69,7 +70,7 @@ body {
             flex-direction: column;
             grid-row: 1 / -1;
             justify-content: center;
-            padding: $padding $padding * 2;
+            padding: $padding * 2 $padding * 4;
             text-align: center;
             h1 {
                 border-bottom: $border-width solid $pink-bright;
