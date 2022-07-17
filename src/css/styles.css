@@ -8,7 +8,9 @@
 
 body {
   background: url("../images/cake-bg.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   font-family: Quicksand, sans-serif;
   overflow-x: hidden;
@@ -95,19 +97,17 @@ body a {
   text-transform: uppercase;
 }
 .App main {
-  background: rgba(31, 31, 31, 0.5);
-  border: 1px groove rgba(241, 241, 241, 0.33);
-  border-radius: 10px;
+  background: rgba(31, 31, 31, 0.9);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
-  margin: 4rem;
+  margin: 4rem 0;
 }
 .App main #summary {
   align-items: center;
-  background: #f1f1f1;
+  background: linear-gradient(45deg, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 0.7), #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.5)), url("../images/black-grey-polka-dots.jpg");
   border: 5px solid #d36582;
   border-radius: 8px;
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -126,6 +126,29 @@ body a {
   font-size: 4rem;
   text-transform: capitalize;
 }
+.App main #summary #btn-group {
+  display: flex;
+  gap: 12px;
+  margin: 1rem;
+}
+.App main #summary #btn-group button {
+  align-items: center;
+  background: rgba(255, 87, 132, 0.9);
+  border: 5px solid #1f1f1f;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: #f1f1f1;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  height: 36px;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.App main #summary #btn-group button:hover {
+  background: #ff5784;
+}
 .App main #summary span {
   color: #d36582;
   font-size: 1.75rem;
@@ -139,7 +162,7 @@ body a {
 }
 .App main .container {
   align-items: center;
-  background: #f1f1f1;
+  background: linear-gradient(45deg, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 0.7), #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.5)), url("../images/black-grey-polka-dots.jpg");
   border: 5px solid #d36582;
   border-radius: 8px;
   display: flex;

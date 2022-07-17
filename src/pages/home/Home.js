@@ -11,16 +11,19 @@ function Home() {
         </Heading>
         <Paragraph>of our</Paragraph>
         <Heading level="2">
-          Custom handmade <span>cakes</span>, <span>cookies</span> &{" "}
+          custom handmade <span>cakes</span>, <span>cookies</span> &{" "}
           <span>pies</span>
         </Heading>
-        <Heading level="3">prepared fresh from my kitchen</Heading>
+        <Heading level="3">prepared fresh from our kitchen</Heading>
         <Heading level="2">delivered straight to your doorstep!</Heading>
+        <span id="btn-group">
+          <Button className="btn-primary">view our menu</Button>
+          <Button className="btn-secondary">view custom order options</Button>
+        </span>
       </div>
       <div className="container">
         <Heading level="3">now serving nassau & suffolk county!</Heading>
       </div>
-      <div />
     </main>
   );
 }

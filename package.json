@@ -36,6 +36,8 @@
       "prettier"
     ],
     "rules": {
+      "import/prefer-default-export": 0,
+      "react/jsx-props-no-spreading": "off",
       "no-console": "off",
       "import/no-extraneous-dependencies": [
         "error",

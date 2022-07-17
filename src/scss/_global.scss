@@ -9,7 +9,9 @@
 
 body {
     background: url("../images/cake-bg.jpg");
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     font-family: Quicksand, sans-serif;
     overflow-x: hidden;
@@ -96,18 +98,26 @@ body {
         
     }
     main {
-        background: rgba($primary, 0.5);
-        border: 1px groove rgba($secondary, 0.33);
-        border-radius: $border-radius;
+        background: rgba($primary, 0.9);
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         display: grid;
         gap: $grid-gap;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
-        margin: $margin * 4;
+        margin: $margin * 4 0;
         #summary {
             align-items: center;
-            background: $secondary;
+            background:
+                linear-gradient(45deg,
+                rgba($secondary, 0.5),
+                rgba($secondary, 0.7),
+                rgba($secondary, 1.0),
+                rgba($secondary, 1.0),
+                rgba($secondary, 1.0),
+                rgba($secondary, 1.0),
+                rgba($secondary, 0.7),
+                rgba($secondary, 0.5)),
+                url("../images/black-grey-polka-dots.jpg");
             border: $border solid $pink-medium;
             border-radius: math.div($border-radius, 1.25);
             box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -125,6 +135,29 @@ body {
                 font-size: 4rem;
                 text-transform: capitalize;
             }
+            #btn-group {
+                display: flex;
+                gap: 12px;
+                margin: $margin;
+                button {
+                    align-items: center;
+                    background: rgba($pink-bright, 0.9);
+                    border: $border solid $primary;
+                    border-radius: math.div($border-radius, 1.25);
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+                    color: $secondary;
+                    cursor: pointer;
+                    display: flex;
+                    font-weight: bold;
+                    justify-content: center;
+                    height: 36px;
+                    padding: $padding;
+                    text-transform: capitalize;
+                    &:hover {
+                        background: $pink-bright;
+                    }
+                }
+            }
             span {
                 color: $pink-medium;
                 font-size: 1.75rem;
@@ -139,7 +172,17 @@ body {
         }
         .container {
             align-items: center;
-            background: $secondary;
+            background:
+                linear-gradient(45deg,
+                rgba($secondary, 0.5),
+                rgba($secondary, 0.7),
+                rgba($secondary, 1.0),
+                rgba($secondary, 1.0),
+                rgba($secondary, 1.0),
+                rgba($secondary, 1.0),
+                rgba($secondary, 0.7),
+                rgba($secondary, 0.5)),
+                url("../images/black-grey-polka-dots.jpg");
             border: $border solid $pink-medium;
             border-radius: math.div($border-radius, 1.25);
             display: flex;
