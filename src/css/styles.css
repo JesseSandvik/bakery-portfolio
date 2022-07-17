@@ -102,28 +102,53 @@ body a {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   margin: 4rem;
 }
 .App main #summary {
   align-items: center;
   background: #f1f1f1;
+  border: 5px solid #d36582;
   border-radius: 8px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
+  grid-column: 1/1;
+  grid-row: 1/1;
   justify-content: center;
   margin: 1rem;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+.App main #summary #phrase {
+  color: #d36582;
+  font-family: Corinthia, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  text-transform: capitalize;
 }
 .App main #summary span {
   color: #d36582;
   font-size: 1.75rem;
 }
+.App main #summary h3 {
+  margin: 1rem 0;
+}
 .App main #summary p {
   font-weight: bold;
+  margin-bottom: 1rem;
 }
-.App main #phrase {
-  color: #d36582;
-  font-family: Corinthia, Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+.App main .container {
+  align-items: center;
+  background: #f1f1f1;
+  border: 5px solid #d36582;
+  border-radius: 8px;
+  display: flex;
+  grid-column: 1/1;
+  grid-row: 2/-1;
+  justify-content: center;
+  margin: 1rem;
+  margin-top: 0;
+  padding: 1rem;
   text-transform: capitalize;
 }
 .App footer {

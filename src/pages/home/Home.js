@@ -9,7 +9,7 @@ function Home() {
         <Heading id="phrase" level="2">
           experience the magic
         </Heading>
-        <Paragraph>of my</Paragraph>
+        <Paragraph>of our</Paragraph>
         <Heading level="2">
           Custom handmade <span>cakes</span>, <span>cookies</span> &{" "}
           <span>pies</span>
@@ -17,7 +17,9 @@ function Home() {
         <Heading level="3">prepared fresh from my kitchen</Heading>
         <Heading level="2">delivered straight to your doorstep!</Heading>
       </div>
-      <Heading level="3">now serving nassau & suffolk county!</Heading>
+      <div className="container">
+        <Heading level="3">now serving nassau & suffolk county!</Heading>
+      </div>
       <div />
     </main>
   );

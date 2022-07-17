@@ -54,7 +54,7 @@ body {
                         font-weight: bold;
                         padding-bottom: math.div($padding, 4);
                         &.active {
-                            border-bottom: math.div($border-width, 1.33) solid $pink-bright;
+                            border-bottom: math.div($border, 1.33) solid $pink-bright;
                         }
                     }
                 }
@@ -69,7 +69,7 @@ body {
         #title {
             align-items: center;
             background: $white;
-            border: $border-width solid $primary;
+            border: $border solid $primary;
             border-radius: $border-radius;
             color: $primary;
             cursor: pointer;
@@ -79,7 +79,7 @@ body {
             padding: $padding $padding * 4;
             text-align: center;
             h1 {
-                border-bottom: $border-width solid $pink-bright;
+                border-bottom: $border solid $pink-bright;
                 font-family: Corinthia, Arial, Helvetica, sans-serif;
                 font-size: 2.5rem;
                 margin-bottom: math.div($margin, 2);
@@ -103,27 +103,52 @@ body {
         display: grid;
         gap: $grid-gap;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
         margin: $margin * 4;
         #summary {
             align-items: center;
             background: $secondary;
+            border: $border solid $pink-medium;
             border-radius: math.div($border-radius, 1.25);
+            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
             display: flex;
             flex-direction: column;
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
             justify-content: center;
             margin: $margin;
+            margin-bottom: 0;
+            padding: $padding;
+            #phrase {
+                color: $pink-medium;
+                font-family: Corinthia, Arial, Helvetica, sans-serif;
+                font-size: 4rem;
+                text-transform: capitalize;
+            }
             span {
                 color: $pink-medium;
                 font-size: 1.75rem;
             }
+            h3 {
+                margin: $margin 0;
+            }
             p {
                 font-weight: bold;
+                margin-bottom: $margin;
             }
         }
-        #phrase {
-            color: $pink-medium;
-            font-family: Corinthia, Arial, Helvetica, sans-serif;
-            font-size: 4rem;
+        .container {
+            align-items: center;
+            background: $secondary;
+            border: $border solid $pink-medium;
+            border-radius: math.div($border-radius, 1.25);
+            display: flex;
+            grid-column: 1 / 1;
+            grid-row: 2 / -1;
+            justify-content: center;
+            margin: $margin;
+            margin-top: 0;
+            padding: $padding;
             text-transform: capitalize;
         }
     }
