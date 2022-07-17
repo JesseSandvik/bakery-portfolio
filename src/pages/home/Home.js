@@ -1,17 +1,24 @@
+import Button from "../../components/atoms/button/Button";
 import Heading from "../../components/atoms/heading/Heading";
-import Image from "../../components/atoms/image/Image";
-import HomepageBanner from "../../images/banner-homepage.png";
+import Paragraph from "../../components/atoms/paragraph/Paragraph";
 
 function Home() {
   return (
     <main>
-      <Heading level="2">experience the magic...</Heading>
-      <div id="image-carousel">
-        <Image
-          src={HomepageBanner}
-          alt="A collection of Stacy's cake sample images."
-        />
+      <div id="summary">
+        <Heading id="phrase" level="2">
+          experience the magic
+        </Heading>
+        <Paragraph>of my</Paragraph>
+        <Heading level="2">
+          Custom handmade <span>cakes</span>, <span>cookies</span> &{" "}
+          <span>pies</span>
+        </Heading>
+        <Heading level="3">prepared fresh from my kitchen</Heading>
+        <Heading level="2">delivered straight to your doorstep!</Heading>
       </div>
+      <Heading level="3">now serving nassau & suffolk county!</Heading>
+      <div />
     </main>
   );
 }

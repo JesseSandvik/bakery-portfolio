@@ -7,8 +7,9 @@
 }
 
 body {
+  background: url("../images/cake-bg.jpg");
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   font-family: Quicksand, sans-serif;
   overflow-x: hidden;
 }
@@ -93,22 +94,37 @@ body a {
   font-weight: bold;
   text-transform: uppercase;
 }
-.App main h2 {
+.App main {
+  background: rgba(31, 31, 31, 0.5);
+  border: 1px groove rgba(241, 241, 241, 0.33);
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem;
+}
+.App main #summary {
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+.App main #summary span {
+  color: #d36582;
+  font-size: 1.75rem;
+}
+.App main #summary p {
+  font-weight: bold;
+}
+.App main #phrase {
   color: #d36582;
   font-family: Corinthia, Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 1rem 2rem;
+  font-size: 4rem;
   text-transform: capitalize;
-}
-.App main #image-carousel {
-  border: 1px solid red;
-  margin: 0 2rem;
-}
-.App main img {
-  border-radius: 10px;
-  height: 500px;
-  width: 500px;
 }
 .App footer {
   align-items: center;

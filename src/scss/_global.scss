@@ -8,8 +8,9 @@
 }
 
 body {
+    background: url("../images/cake-bg.jpg");
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     font-family: Quicksand, sans-serif;
     overflow-x: hidden;
     h1 {
@@ -95,22 +96,35 @@ body {
         
     }
     main {
-        h2 {
+        background: rgba($primary, 0.5);
+        border: 1px groove rgba($secondary, 0.33);
+        border-radius: $border-radius;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        display: grid;
+        gap: $grid-gap;
+        grid-template-columns: 1fr 1fr;
+        margin: $margin * 4;
+        #summary {
+            align-items: center;
+            background: $secondary;
+            border-radius: math.div($border-radius, 1.25);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: $margin;
+            span {
+                color: $pink-medium;
+                font-size: 1.75rem;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+        #phrase {
             color: $pink-medium;
             font-family: Corinthia, Arial, Helvetica, sans-serif;
-            font-size: 3rem;
-            font-weight: bold;
-            margin: $margin $margin * 2;
+            font-size: 4rem;
             text-transform: capitalize;
-        }
-        #image-carousel {
-            border: 1px solid red;
-            margin: 0 $margin * 2;
-        }
-        img {
-            border-radius: $border-radius;
-            height: 500px;
-            width: 500px;
         }
     }
     footer {
