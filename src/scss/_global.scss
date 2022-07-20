@@ -99,12 +99,14 @@ body {
     }
     main {
         background: rgba($primary, 0.9);
+        border-radius: math.div($border-radius, 1.25);
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         display: grid;
         gap: $grid-gap;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
-        margin: $margin * 4 0;
+        max-height: 77vh;
+        margin: $margin $margin * 4;
         #summary {
             align-items: center;
             background:

@@ -98,12 +98,14 @@ body a {
 }
 .App main {
   background: rgba(31, 31, 31, 0.9);
+  border-radius: 8px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
-  margin: 4rem 0;
+  max-height: 77vh;
+  margin: 1rem 4rem;
 }
 .App main #summary {
   align-items: center;
