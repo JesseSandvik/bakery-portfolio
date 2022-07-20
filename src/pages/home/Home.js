@@ -1,6 +1,8 @@
 import Button from "../../components/atoms/button/Button";
 import Heading from "../../components/atoms/heading/Heading";
+import Image from "../../components/atoms/image/Image";
 import Paragraph from "../../components/atoms/paragraph/Paragraph";
+import WhiteCake from "../../images/cake-white.jpg";
 
 function Home() {
   return (
@@ -23,6 +25,12 @@ function Home() {
       </div>
       <div className="container">
         <Heading level="3">now serving nassau & suffolk county!</Heading>
+      </div>
+      <div className="container-two">
+        <Image
+          alt="White ornate cake with white roses for decoration."
+          src={WhiteCake}
+        />
       </div>
     </main>
   );

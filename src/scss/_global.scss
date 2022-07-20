@@ -139,6 +139,7 @@ body {
                 display: flex;
                 gap: 12px;
                 margin: $margin;
+                margin-top: 60px;
                 button {
                     align-items: center;
                     background: rgba($pink-bright, 0.9);
@@ -150,8 +151,8 @@ body {
                     display: flex;
                     font-weight: bold;
                     justify-content: center;
-                    height: 36px;
-                    padding: $padding;
+                    height: 60px;
+                    padding: $padding $padding * 2.25;
                     text-transform: capitalize;
                     &:hover {
                         background: $pink-bright;
@@ -193,6 +194,20 @@ body {
             margin-top: 0;
             padding: $padding;
             text-transform: capitalize;
+        }
+        .container-two {
+            border: $border solid $pink-medium;
+            border-radius: math.div($border-radius, 1.25);
+            grid-column: 2 / -1;
+            grid-row: 1 / -1;
+            max-height: 100%;
+            margin: $margin;
+            margin-left: 0;
+            img {
+                border-radius: math.div($border-radius, 4);
+                height: 100%;
+                width: 100%;
+            }
         }
     }
     footer {
