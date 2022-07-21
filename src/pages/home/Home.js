@@ -13,8 +13,8 @@ function Home() {
         </Heading>
         <Paragraph>of our</Paragraph>
         <Heading level="2">
-          custom handmade <span>cakes</span>, <span>cookies</span> &{" "}
-          <span>pies</span>
+          custom handmade <span>cakes</span>, <span>cupcakes</span>, &{" "}
+          <span>treats</span>
         </Heading>
         <Heading level="3">prepared fresh from our kitchen</Heading>
         <Heading level="2">delivered straight to your doorstep!</Heading>
@@ -25,6 +25,14 @@ function Home() {
       </div>
       <div className="container">
         <Heading level="3">now serving nassau & suffolk county!</Heading>
+        <span id="social-icons">
+          <Button>
+            <i className="fa-brands fa-facebook-square" />
+          </Button>
+          <Button>
+            <i className="fa-brands fa-instagram-square" />
+          </Button>
+        </span>
       </div>
       <div className="container-two">
         <Image
