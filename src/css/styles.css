@@ -96,7 +96,103 @@ body a {
   font-weight: bold;
   text-transform: uppercase;
 }
-.App main {
+.App footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#contact {
+  background: rgba(31, 31, 31, 0.9);
+  border: 1px groove rgba(241, 241, 241, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  color: #f1f1f1;
+  display: grid;
+  gap: 8rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  padding: 2rem;
+  margin: 1rem 4rem;
+}
+#contact h2, #contact h3, #contact h4 {
+  letter-spacing: 0.033rem;
+  text-transform: capitalize;
+}
+#contact h3, #contact h4 {
+  margin: 2rem 0;
+}
+#contact h2 {
+  border-bottom: 5px solid #ff5784;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+#contact h3 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+#contact h4 {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: disc;
+  margin: 0 2rem;
+}
+#contact ul p {
+  padding-left: 0.25rem;
+}
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+#contact-info h3 {
+  display: flex;
+  justify-content: center;
+  text-transform: none;
+}
+#contact-info ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact-info ol li {
+  align-items: center;
+  background: #1f1f1f;
+  border: 1px solid rgba(241, 241, 241, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.33);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+#contact-info ol li h4 {
+  color: #ff5784;
+  font-size: 2rem;
+}
+#contact-info ol li span {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+#contact-info ol li span h5, #contact-info ol li span i {
+  font-size: 2rem;
+}
+#contact-info ol li span i {
+  color: #ff5784;
+}
+
+#home {
   background: rgba(31, 31, 31, 0.9);
   border: 1px groove rgba(241, 241, 241, 0.1);
   border-radius: 8px;
@@ -109,7 +205,7 @@ body a {
   padding: 2rem;
   margin: 1rem 4rem;
 }
-.App main #summary {
+#home #summary {
   align-items: center;
   background: linear-gradient(45deg, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 0.7), #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.5)), url("../images/black-grey-polka-dots.jpg");
   background-position: center;
@@ -124,19 +220,19 @@ body a {
   justify-content: center;
   padding: 1rem;
 }
-.App main #summary #phrase {
+#home #summary #phrase {
   color: #ff5784;
   font-family: Corinthia, Arial, Helvetica, sans-serif;
   font-size: 4rem;
   text-transform: capitalize;
 }
-.App main #summary #btn-group {
+#home #summary #btn-group {
   display: flex;
   gap: 1rem;
   margin: 1rem;
   margin-top: 2rem;
 }
-.App main #summary #btn-group button {
+#home #summary #btn-group button {
   align-items: center;
   background: #ff5784;
   border: 5px solid #1f1f1f;
@@ -153,42 +249,43 @@ body a {
   text-transform: capitalize;
   width: 300px;
 }
-.App main #summary #btn-group button:hover {
+#home #summary #btn-group button:hover {
   background: #ff5784;
   scale: 1.025;
 }
-.App main #summary span {
+#home #summary span {
   color: #ff5784;
   font-size: 1.75rem;
 }
-.App main #summary h3 {
+#home #summary h3 {
   margin: 1rem 0;
 }
-.App main #summary p {
+#home #summary p {
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.App main #summary small {
+#home #summary small {
   font-weight: bold;
   margin: 1rem 0;
 }
-.App main #summary small a {
+#home #summary small a {
   color: blue;
   text-transform: capitalize;
 }
-.App main #summary small a:hover {
+#home #summary small a:hover {
   color: #ff5784;
 }
-.App main #summary small a:visited {
+#home #summary small a:visited {
   color: blueviolet;
 }
-.App main .container {
+#home .container {
   align-items: center;
   background: linear-gradient(45deg, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 0.7), #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.5)), url("../images/black-grey-polka-dots.jpg");
   background-position: center;
   background-repeat: no-repeat;
   border: 5px solid #d36582;
   border-radius: 8px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -198,12 +295,12 @@ body a {
   padding: 1rem;
   text-transform: capitalize;
 }
-.App main .container #social-icons {
+#home .container #social-icons {
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
-.App main .container #social-icons button {
+#home .container #social-icons button {
   background: rgba(31, 31, 31, 0.9);
   border: none;
   border-radius: 8px;
@@ -212,30 +309,25 @@ body a {
   cursor: pointer;
   padding: 0.25rem;
 }
-.App main .container #social-icons button:hover {
+#home .container #social-icons button:hover {
   color: #ff5784;
   scale: 1.1;
 }
-.App main .container #social-icons button i {
+#home .container #social-icons button i {
   font-size: 2rem;
 }
-.App main .container-two {
+#home .container-two {
   border: 5px solid #d36582;
   border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   grid-column: 2/-1;
   grid-row: 1/-1;
   max-height: 100%;
 }
-.App main .container-two img {
+#home .container-two img {
   border-radius: 2.5px;
   height: 100%;
   width: 100%;
-}
-.App footer {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

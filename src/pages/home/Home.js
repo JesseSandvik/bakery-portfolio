@@ -8,7 +8,7 @@ import WhiteCake from "../../images/cake-white.jpg";
 
 function Home() {
   return (
-    <main>
+    <main id="home">
       <div id="summary">
         <Heading id="phrase" level="2">
           experience the magic
@@ -25,8 +25,12 @@ function Home() {
           <Button className="btn-secondary">view custom order options</Button>
         </span>
         <Small>
-          Ready to order? View our{" "}
-          <NavigationLink to="/contact">booking policy</NavigationLink>.
+          Ready to order? Review our
+          <NavigationLink to="/contact">
+            {" "}
+            booking policy & contact information
+          </NavigationLink>
+          .
         </Small>
       </div>
       <div className="container">
