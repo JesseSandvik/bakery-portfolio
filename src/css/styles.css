@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("../images/cake-bg.jpg");
+  background: linear-gradient(45deg, rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.6), rgba(31, 31, 31, 0.6), rgba(31, 31, 31, 0.5)), url("../images/cake-bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,15 +102,18 @@ body a {
   border-radius: 8px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
   max-height: 77vh;
+  padding: 2rem;
   margin: 1rem 4rem;
 }
 .App main #summary {
   align-items: center;
   background: linear-gradient(45deg, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 0.7), #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.5)), url("../images/black-grey-polka-dots.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   border: 5px solid #d36582;
   border-radius: 8px;
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -119,8 +122,6 @@ body a {
   grid-column: 1/1;
   grid-row: 1/1;
   justify-content: center;
-  margin: 1rem;
-  margin-bottom: 0;
   padding: 1rem;
 }
 .App main #summary #phrase {
@@ -133,11 +134,11 @@ body a {
   display: flex;
   gap: 1rem;
   margin: 1rem;
-  margin-top: 60px;
+  margin-top: 2rem;
 }
 .App main #summary #btn-group button {
   align-items: center;
-  background: rgba(255, 87, 132, 0.9);
+  background: #ff5784;
   border: 5px solid #1f1f1f;
   border-radius: 8px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -167,9 +168,25 @@ body a {
   font-weight: bold;
   margin-bottom: 1rem;
 }
+.App main #summary small {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.App main #summary small a {
+  color: blue;
+  text-transform: capitalize;
+}
+.App main #summary small a:hover {
+  color: #ff5784;
+}
+.App main #summary small a:visited {
+  color: blueviolet;
+}
 .App main .container {
   align-items: center;
-  background: linear-gradient(45deg, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 0.7), #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.5)), url("../images/black-grey-polka-dots.jpg");
+  background: linear-gradient(45deg, rgba(241, 241, 241, 0.5), rgba(241, 241, 241, 0.7), #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.5)), url("../images/black-grey-polka-dots.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   border: 5px solid #d36582;
   border-radius: 8px;
   display: flex;
@@ -178,8 +195,6 @@ body a {
   grid-column: 1/1;
   grid-row: 2/-1;
   justify-content: center;
-  margin: 1rem;
-  margin-top: 0;
   padding: 1rem;
   text-transform: capitalize;
 }
@@ -210,8 +225,6 @@ body a {
   grid-column: 2/-1;
   grid-row: 1/-1;
   max-height: 100%;
-  margin: 1rem;
-  margin-left: 0;
 }
 .App main .container-two img {
   border-radius: 2.5px;
