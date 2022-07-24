@@ -180,15 +180,15 @@ body a {
   color: #ff5784;
   font-size: 2rem;
 }
-#contact-info ol li span {
+#contact-info ol li a {
   align-items: center;
   display: flex;
   gap: 1rem;
 }
-#contact-info ol li span h5, #contact-info ol li span i {
+#contact-info ol li a h5, #contact-info ol li a i {
   font-size: 2rem;
 }
-#contact-info ol li span i {
+#contact-info ol li a i {
   color: #ff5784;
 }
 

@@ -1,4 +1,5 @@
 import Button from "../../components/atoms/button/Button";
+import ExternalLink from "../../components/atoms/externalLink/ExternalLink";
 import Heading from "../../components/atoms/heading/Heading";
 import Image from "../../components/atoms/image/Image";
 import NavigationLink from "../../components/atoms/navLink/NavLink";
@@ -87,33 +88,31 @@ function Contact() {
           <ol>
             <li>
               <Heading level="4">contact us by phone:</Heading>
-              <span>
+              <ExternalLink href="tel:5168194035">
                 <i className="fa-solid fa-square-phone" />
                 <Heading level="5">516 - 819 - 4035</Heading>
-              </span>
+              </ExternalLink>
             </li>
             <li>
               <Heading level="4">contact us by email:</Heading>
-              <span>
+              <ExternalLink href="mailto: stacyscakesny@gmai.com">
                 <i className="fa-solid fa-square-envelope" />
                 <Heading level="5">stacyscakesny@gmail.com</Heading>
-              </span>
+              </ExternalLink>
             </li>
             <li>
               <Heading level="4">like us on facebook:</Heading>
-              <span>
+              <ExternalLink href="https://www.facebook.com/stacyscakesandcupcakes">
                 <i className="fa-brands fa-facebook-square" />
-                <Heading level="5">516 - 819 - 4035</Heading>
-              </span>
+                <Heading level="5">Stacy&apos;s Cakes NY</Heading>
+              </ExternalLink>
             </li>
             <li>
               <Heading level="4">follow us on instagram:</Heading>
-              <span>
+              <ExternalLink href="https://www.instagram.com/stacyscakesny">
                 <i className="fa-brands fa-instagram-square" />
-                <Heading level="5">
-                  https://www.instagram.com/stacyscakesny/
-                </Heading>
-              </span>
+                <Heading level="5">STACYSCAKESNY</Heading>
+              </ExternalLink>
             </li>
           </ol>
         </section>
