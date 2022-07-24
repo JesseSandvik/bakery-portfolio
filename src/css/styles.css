@@ -112,7 +112,7 @@ body a {
   display: grid;
   gap: 8rem;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: auto;
   padding: 2rem;
   margin: 1rem 4rem;
 }
@@ -149,6 +149,11 @@ body a {
 #contact ul p {
   padding-left: 0.25rem;
 }
+#contact #booking-policy article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 #contact-info {
   display: flex;
   flex-direction: column;
@@ -184,6 +189,10 @@ body a {
   align-items: center;
   display: flex;
   gap: 1rem;
+}
+#contact-info ol li a:hover {
+  color: #ff5784;
+  scale: 1.1;
 }
 #contact-info ol li a h5, #contact-info ol li a i {
   font-size: 2rem;
@@ -300,7 +309,7 @@ body a {
   gap: 1rem;
   justify-content: center;
 }
-#home .container #social-icons button {
+#home .container #social-icons a {
   background: rgba(31, 31, 31, 0.9);
   border: none;
   border-radius: 8px;
@@ -309,11 +318,11 @@ body a {
   cursor: pointer;
   padding: 0.25rem;
 }
-#home .container #social-icons button:hover {
+#home .container #social-icons a:hover {
   color: #ff5784;
   scale: 1.1;
 }
-#home .container #social-icons button i {
+#home .container #social-icons a i {
   font-size: 2rem;
 }
 #home .container-two {

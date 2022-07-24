@@ -1,4 +1,5 @@
 import Button from "../../components/atoms/button/Button";
+import ExternalLink from "../../components/atoms/externalLink/ExternalLink";
 import Heading from "../../components/atoms/heading/Heading";
 import Image from "../../components/atoms/image/Image";
 import NavigationLink from "../../components/atoms/navLink/NavLink";
@@ -36,15 +37,21 @@ function Home() {
       <div className="container">
         <Heading level="3">now serving nassau & suffolk county!</Heading>
         <span id="social-icons">
-          <Button title="Email">
+          <ExternalLink href="mailto: stacyscakesny@gmai.com" title="Email">
             <i className="fa-solid fa-square-envelope" />
-          </Button>
-          <Button title="Facebook">
+          </ExternalLink>
+          <ExternalLink
+            href="https://www.facebook.com/stacyscakesandcupcakes"
+            title="Facebook"
+          >
             <i className="fa-brands fa-facebook-square" />
-          </Button>
-          <Button title="Instagram">
+          </ExternalLink>
+          <ExternalLink
+            href="https://www.instagram.com/stacyscakesny"
+            title="Instagram"
+          >
             <i className="fa-brands fa-instagram-square" />
-          </Button>
+          </ExternalLink>
         </span>
       </div>
       <div className="container-two">

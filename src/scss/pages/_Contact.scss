@@ -10,7 +10,7 @@
     display: grid;
     gap: $grid-gap * 8;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: auto;
     padding: $padding * 2;
     margin: $margin $margin * 4;
     h2, h3, h4 {
@@ -46,6 +46,13 @@
             padding-left: math.div($padding, 4);
         }
     }
+    #booking-policy {
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: $grid-gap;
+        }
+    }
     &-info {
         display: flex;
         flex-direction: column;
@@ -78,6 +85,10 @@
                     align-items: center;
                     display: flex;
                     gap: $grid-gap;
+                    &:hover {
+                        color: $pink-bright;
+                        scale: 1.1;
+                    }
                     h5, i {
                         font-size: 2rem;
                     }

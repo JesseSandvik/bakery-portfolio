@@ -11,7 +11,7 @@ function Contact() {
     <main id="contact">
       <div>
         <Heading level="2">review our booking policy</Heading>
-        <section>
+        <section id="booking-policy">
           <article>
             <Heading level="3">booking policy</Heading>
             <ul>

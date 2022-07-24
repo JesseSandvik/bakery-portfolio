@@ -128,7 +128,7 @@
             display: flex;
             gap: $grid-gap;
             justify-content: center;
-            button {
+            a {
                 background: rgba($primary, 0.9);
                 border: none;
                 border-radius: math.div($border-radius, 1.25);
