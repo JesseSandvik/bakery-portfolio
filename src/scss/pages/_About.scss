@@ -1,0 +1,101 @@
+@use "../settings/" as *;
+@use "sass:math";
+
+#about {
+    background: rgba($primary, 0.9);
+    border: 1px groove rgba($secondary, 0.1);
+    border-radius: math.div($border-radius, 1.25);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    color: $secondary;
+    display: grid;
+    gap: $grid-gap * 8;
+    grid-template-rows: auto;
+    padding: $padding * 2;
+    margin: $margin $margin * 4;
+    h2, h3, h4 {
+        letter-spacing: 0.033rem;
+        text-transform: capitalize;
+    }
+    h3, h4 {
+        margin: $margin * 2 0;
+    }
+    h2 {
+        border-bottom: $border solid $pink-bright;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: $margin;
+        padding-bottom: $padding;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin-left: $margin;
+    }
+    h4 {
+        font-size: 1.2rem;
+        margin-left: $margin * 2;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: $grid-gap * 2;
+        list-style: disc;
+        margin: 0 $margin * 2;
+        p {
+            padding-left: math.div($padding, 4);
+        }
+    }
+    #booking-policy {
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: $grid-gap;
+        }
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: $grid-gap;
+        list-style: none;
+        h3 {
+            display: flex;
+            justify-content: center;
+            text-transform: none;
+        }
+        ol {
+            display: flex;
+            flex-direction: column;
+            gap: $grid-gap;
+            li {
+                align-items: center;
+                background: $primary;
+                border: 1px solid rgba($secondary, 0.1);
+                border-radius: math.div($border-radius, 1.25);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.33);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: $padding * 4;
+                h4 {
+                    color: $pink-bright;
+                    font-size: 2rem;
+                }
+                a {
+                    align-items: center;
+                    display: flex;
+                    gap: $grid-gap;
+                    &:hover {
+                        color: $pink-bright;
+                        scale: 1.1;
+                    }
+                    h5, i {
+                        font-size: 2rem;
+                    }
+                    i {
+                        color: $pink-bright;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,6 @@
-import Button from "../../components/atoms/button/Button";
 import ExternalLink from "../../components/atoms/externalLink/ExternalLink";
 import Heading from "../../components/atoms/heading/Heading";
-import Image from "../../components/atoms/image/Image";
-import NavigationLink from "../../components/atoms/navLink/NavLink";
 import Paragraph from "../../components/atoms/paragraph/Paragraph";
-import Small from "../../components/atoms/small/Small";
 
 function Contact() {
   return (
