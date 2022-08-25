@@ -50,23 +50,26 @@
             margin-top: $margin * 2;
             button {
                 align-items: center;
-                background: $pink-bright;
+                background: rgba($pink-bright, 0.9);
                 border: $border solid $primary;
                 border-radius: math.div($border-radius, 1.25);
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
                 color: $secondary;
                 cursor: pointer;
                 display: flex;
+                font-size: 1rem;
                 font-weight: bold;
                 justify-content: center;
                 height: 60px;
-                letter-spacing: 0.033rem;
                 padding: $padding $padding * 2.25;
                 text-transform: capitalize;
+                transition: 0.2s ease-in-out;
                 width: 300px;
                 &:hover {
                     background: $pink-bright;
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
                     scale: 1.025;
+                    transition: 0.2s ease-in-out;
                 }
             }
         }
@@ -132,11 +135,13 @@
                 background: rgba($primary, 0.9);
                 border: none;
                 border-radius: math.div($border-radius, 1.25);
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
                 color: rgba($pink-bright, 0.9);
                 cursor: pointer;
                 padding: math.div($padding, 4);
+                transition: 0.2s ease-in-out;
                 &:hover {
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
                     color: $pink-bright;
                     scale: 1.1;
                 }

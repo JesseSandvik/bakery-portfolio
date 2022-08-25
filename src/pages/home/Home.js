@@ -23,7 +23,7 @@ function Home() {
         <Heading level="2">delivered straight to your doorstep!</Heading>
         <span id="btn-group">
           <Button className="btn-primary">view our menu</Button>
-          <Button className="btn-secondary">view custom order options</Button>
+          <Button className="btn-secondary">view custom options</Button>
         </span>
         <Small>
           Ready to order? Review our

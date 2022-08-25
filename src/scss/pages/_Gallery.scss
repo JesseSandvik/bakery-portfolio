@@ -10,90 +10,59 @@
     display: grid;
     gap: $grid-gap * 8;
     grid-template-rows: auto;
-    padding: $padding * 2;
+    padding: $padding * 2 0;
     margin: $margin $margin * 4;
     h2, h3, h4 {
         letter-spacing: 0.033rem;
         text-transform: capitalize;
-    }
-    h3, h4 {
-        margin: $margin * 2 0;
     }
     h2 {
         border-bottom: $border solid $pink-bright;
         display: flex;
         justify-content: center;
         font-size: 2rem;
-        margin-bottom: $margin;
+        margin: 0 $margin * 2 $margin;
         padding-bottom: $padding;
     }
-    h3 {
-        font-size: 1.5rem;
-        margin-left: $margin;
-    }
-    h4 {
-        font-size: 1.2rem;
-        margin-left: $margin * 2;
-    }
     ul {
-        display: flex;
-        flex-direction: column;
-        gap: $grid-gap * 2;
-        list-style: disc;
-        margin: 0 $margin * 2;
-        p {
-            padding-left: math.div($padding, 4);
-        }
-    }
-    #booking-policy {
-        article {
-            display: flex;
-            flex-direction: column;
-            gap: $grid-gap;
-        }
-    }
-    &-info {
-        display: flex;
-        flex-direction: column;
-        gap: $grid-gap;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto 1fr 3fr 1fr auto;
         list-style: none;
-        h3 {
+        padding: $padding;
+        li {
+            align-items: center;
             display: flex;
             justify-content: center;
-            text-transform: none;
-        }
-        ol {
-            display: flex;
-            flex-direction: column;
-            gap: $grid-gap;
-            li {
-                align-items: center;
-                background: $primary;
-                border: 1px solid rgba($secondary, 0.1);
+            button {
+                background: transparent;
+                border: none;
                 border-radius: math.div($border-radius, 1.25);
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.33);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: $padding * 4;
-                h4 {
+                color: $secondary;
+                cursor: pointer;
+                font-size: 1.5rem;
+                height: 100%;
+                width: 36px;
+                &:hover {
                     color: $pink-bright;
-                    font-size: 2rem;
+                    transform: scale(1.05);
                 }
-                a {
-                    align-items: center;
-                    display: flex;
-                    gap: $grid-gap;
-                    &:hover {
-                        color: $pink-bright;
-                        scale: 1.1;
-                    }
-                    h5, i {
-                        font-size: 2rem;
-                    }
-                    i {
-                        color: $pink-bright;
-                    }
+            }
+            img {
+                border: $border solid rgba($secondary, 0.8);
+                border-radius: $border-radius;
+                display: block;
+                max-height: 550px;
+                max-width: 100%;
+                object-fit: cover;
+                opacity: 0.9;
+                transition: 0.3s ease all;
+            }
+            &.active {
+                img {
+                    border: $border solid $secondary;
+                    opacity: 1;
+                    transform: scale(1.05);
                 }
             }
         }
